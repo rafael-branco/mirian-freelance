@@ -1,874 +1,1000 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <style>
-            .table-style{
-                border: 1px solid #13a89e;
-                border-radius: 8px;
-            }
-        
-            .table-style thead{
-                background-color: #13a89e;
-            }
-        
-            .table-style thead tr th{
-                text-align: left;
-                font-size: 25px;
-                background-color: #13a89e;
-                color: white;
-                padding: 10px;
-            }
-        
-            .table-style.special-padding tbody tr td:first-child{
-                padding: 20px 0 20px 40px;
-            }
-            .table-style tbody tr td:last-child{
-                
-            }
-        
-            .remove-border-bottom td{
-                border-bottom: none;
-            }
-        
-            .table-style.remove-border tbody tr td:not(:first-child){
-                border-bottom: none;
-            }
-        
-            .table-style.remove-border tbody tr td{
-                border-bottom: none;
-            }
-        
-            .contrast-row td{
-                background-color: #E6EEF2;
-            }
-        
-            .contrast{
-                background-color: #E6EEF2 !important;
-            }
-        
-            .small-text{
-                font-size: 10px;
-            }
-        
-            .smaller-text{
-                font-size: 10px;
-            }
-        
-            .align-text-center{
-                text-align: center;
-            }
-        
-            .text-color td{
-                font-weight: bold;
-                color: #13a89e;
-            }
-        
-            .bold{
-                font-weight: bold;
-            }
-        
-            .uppercase{
-                text-transform: uppercase;
-            }
-        
-            .padding td{
-                padding: 20px;
-            }
-        
-            .vertical-align{
-                vertical-align: middle;
-            }
-        
-            .even-column-contrast tr td:nth-child(odd){
-                background-color: #E6EEF2;
-            }
-        
-            .border-right{
-                border-right: 1px solid #13a89e;
-            }
-        
-            .border-bottom{
-                border-bottom: 1px solid #13a89e !important;
-            }
-        
-        
-        
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <table class="table-style remove-border special-padding table rounded-3 mt-5 mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="5">
-                            Demonstrativo de Consumo Individual de Água
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="6">
-                            <h3 class="mb-4">4 Ventos</h3>
-                            <div class="mb-4">
-                                Rua Teodoro Viana, 223<br>
-                                Jardim da Torre - Nova Lima / MG
-                            </div>
-                            <div class="mb-4">
-                                <h4>Bloco 1</h4>
-                                <p>Síndico: </p>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td class="bold">Medidores:</td>
-                        <td >129</td>
-                    </tr>
-                    <tr class="remove-border-bottom contrast-row">
-                        <td>
 
-                        </td>
-                        <td class="bold">
-                            Intervalo:
-                        </td>
-                        <td>
-                            35 Dias
-                        </td>
-                    </tr>
-                    <tr class="remove-border-bottom">
-                        <td>
-                            
-                        </td>
-                        <td class="bold">
-                            Período:
-                        </td>
-                        <td>
-                            01/12/23 à 05/01/24
-                        </td>
-                    </tr>
-                    <tr class="remove-border-bottom contrast-row">
-                        <td>
-                            
-                        </td>
-                        <td class="bold">
-                            Mês da leitura:
-                        </td>
-                        <td>
-                            01/2024
-                        </td>
-                    </tr>
-                    <tr class="remove-border-bottom">
-                        <td>
-                            
-                        </td>
-                        <td class="bold">
-                            Mês da cobrança:
-                        </td>
-                        <td>
-                            02/2024
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        .table-style {
+            border: 1px solid #13a89e;
+            border-radius: 20px !important;
+            border-spacing: 0;
+            border-collapse: separate;
+        }
 
-            <table class="table-style remove-border table rounded-3 mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="2">
-                            Método de cobrança
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="padding remove-border-bottom">
-                        <td class="bold">
-                            Tipo:
-                        </td>
-                        <td>
-                            Inserir texto aqui
-                        </td>
-                    </tr>
-                    <tr class="padding remove-border-bottom">
-                        <td class="bold">
-                            Descrição:
-                        </td>
-                        <td>
-                            Inserir texto aqui
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <table class="table-style remove-border table rounded-3 mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="">
-                            Medidores com Alarme
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="padding remove-border-bottom">
-                        <td>
-                            Inserir texto aqui
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        .border-top td{
+            border-top: 1px solid #13a89e !important;
+        }
 
-            <table class="table-style remove-border table rounded-3 mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="">
-                            Unidades Vazias
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="padding remove-border-bottom">
-                        <td>
-                            (menor do que 0,5 m3 ou menos)
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        .border-bottom td{
+            border-bottom: 1px solid #13a89e !important;
+        }
 
-            <table class="table-style table mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="10">
-                            Consumo
-                        </th>
-                    </tr>
+        .border-left{
+            border-left: 1px solid #13a89e !important;
+        }
+
+        .table-style thead {
+            background-color: #13a89e;
+        }
+
+        .table-style thead tr th {
+            text-align: center;
+            font-size: 25px;
+            background-color: #13a89e;
+            color: white;
+            padding: 10px;
+        }
+
+        .table-style.special-padding tbody tr td:first-child {
+            padding: 20px 0 20px 40px;
+        }
+
+        .table-style tbody tr td:last-child {}
+
+        .remove-border-bottom td {
+            border-bottom: none;
+        }
+
+        .table-style.remove-border tbody tr td:not(:first-child) {
+            border-bottom: none;
+        }
+
+        .table-style.remove-border tbody tr td {
+            border-bottom: none;
+        }
+
+        .contrast-row td {
+            background-color: #E6EEF2;
+        }
+
+        .contrast {
+            background-color: #E6EEF2 !important;
+        }
+
+        .small-text {
+            font-size: 10px;
+        }
+
+        .smaller-text {
+            font-size: 10px;
+        }
+
+        .align-text-center {
+            text-align: center;
+        }
+
+        .text-color td {
+            font-weight: bold;
+            color: #13a89e;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .padding td {
+            padding: 20px;
+        }
+
+        .padding-side td {
+            padding: 8px 20px;
+        }
+
+        .vertical-align {
+            vertical-align: middle;
+        }
+
+        .even-column-contrast tr td:nth-child(odd) {
+            background-color: #E6EEF2;
+        }
+
+        .border-right {
+            border-right: 1px solid #13a89e;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #13a89e !important;
+        }
+
+        .table-style tr:first-child th:first-child {
+            border-top-left-radius: 20px;
+        }
+
+        .table-style tr:first-child th:last-child {
+            border-top-right-radius: 20px;
+        }
+
+        .table-style tr:last-child td:last-child {
+            border-bottom-right-radius: 20px;
+        }
+
+        .table-style tr:last-child td:first-child {
+            border-bottom-left-radius: 20px;
+        }
+
+        .table-style tbody tr:not(.contrast-row) td {
+            background: transparent;
+        }
+
+        .total-table{
+            background-color: #13a89e;
+
+        }
+
+        .total-table tr td{
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table-style remove-border special-padding table rounded-3 mt-5 mb-3">
+            <thead>
+                <tr>
+                    <th colspan="5">
+                        Demonstrativo de Consumo Individual de Água
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">
+                        <h3 class="mb-4">4 Ventos</h3>
+                        <div class="mb-4">
+                            Rua Teodoro Viana, 223<br>
+                            Jardim da Torre - Nova Lima / MG
+                        </div>
+                    </td>
+                    <td></td>
+                    <td class="bold">Medidores:</td>
+                    <td>129</td>
+                </tr>
+                <tr class="remove-border-bottom contrast-row">
+                    <td>
+
+                    </td>
+                    <td class="bold">
+                        Intervalo:
+                    </td>
+                    <td>
+                        35 Dias
+                    </td>
+                </tr>
+                <tr class="remove-border-bottom">
+                    <td>
+
+                    </td>
+                    <td class="bold">
+                        Período:
+                    </td>
+                    <td>
+                        01/12/23 à 05/01/24
+                    </td>
+                </tr>
+                <tr class="remove-border-bottom contrast-row">
+                    <td>
+
+                    </td>
+                    <td class="bold">
+                        Mês da leitura:
+                    </td>
+                    <td>
+                        01/2024
+                    </td>
+                </tr>
+                <tr class="remove-border-bottom">
+                    <td>
+
+                    </td>
+                    <td class="bold">
+                        Mês da cobrança:
+                    </td>
+                    <td>
+                        02/2024
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        Método de cobrança
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="padding remove-border-bottom">
+                    <td class="bold">
+                        Tipo:
+                    </td>
+                    <td>
+                        Inserir texto aqui
+                    </td>
+                </tr>
+                <tr class="padding remove-border-bottom">
+                    <td class="bold">
+                        Descrição:
+                    </td>
+                    <td>
+                        Inserir texto aqui
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <thead>
+                <tr>
+                    <th colspan="">
+                        Medidores com Alarme
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="padding remove-border-bottom">
+                    <td>
+                        Inserir texto aqui
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <thead>
+                <tr>
+                    <th colspan="">
+                        Unidades Vazias
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="padding remove-border-bottom">
+                    <td>
+                        (menor do que 0,5 m3 ou menos)
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style table mb-3">
+            <thead>
+                <tr>
+                    <th colspan="10">
+                        Consumo
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
+                    <td>Unidade / Ambiente</td>
+                    <td></td>
+                    <td>Fluído</td>
+                    <td>Medidor</td>
+                    <td>Bateria<br>(em anos)</td>
+                    <td>Data</td>
+                    <td>Leitura<br>Atual</td>
+                    <td>Leitura<br>Anterior</td>
+                    <td>Consumo</td>
+                    <td>Valor Total</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 200</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 200</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 200</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 200</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 200</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom border-top border-bottom">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
                     
-                </thead>
-                <tbody>
-                    <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
-                        <td>Unidade / Ambiente</td>
-                        <td></td>
-                        <td>Fluído</td>
-                        <td>Medidor</td>
-                        <td>Bateria<br>(em anos)</td>
-                        <td>Data</td>
-                        <td>Leitura<br>Atual</td>
-                        <td>Leitura<br>Anterior</td>
-                        <td>Consumo</td>
-                        <td>Valor Total</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 200</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 200</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 200</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 200</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 200</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom contrast-row">
-                        
-                        <td class="bold uppercase">Total Apartamento 200</td>
-                        <td></td>
-                        <td class="bold uppercase">Bloco 1</td>
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,000 m³</td>
-                        <td class="bold">R$ 0,00</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom contrast-row">
+                    <td class="bold uppercase">Bloco 1</td>
+                    <td></td>
+                    <td colspan="3" class="bold uppercase">Total Apartamento 200</td>
+                    <td></td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,000 m³</td>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <table class="table-style table mb-3">
+        <table class="table-style table mb-3">
 
-                <tbody>
+            <tbody>
 
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 300</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 300</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 300</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 300</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 300</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom contrast-row">
-                        
-                        <td class="bold uppercase">Total Apartamento 300</td>
-                        <td></td>
-                        <td class="bold uppercase">Bloco 1</td>
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,000 m³</td>
-                        <td class="bold">R$ 0,00</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table class="table-style table mb-3">
-
-                <tbody>
-
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 400</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 400</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 400</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 400</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 400</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom contrast-row">
-                        
-                        <td class="bold uppercase">Total Apartamento 400</td>
-                        <td></td>
-                        <td class="bold uppercase">Bloco 1</td>
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,000 m³</td>
-                        <td class="bold">R$ 0,00</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table class="table-style table mb-3">
-
-                <tbody>
-
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 500</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 500</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 500</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 500</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td class="bold">Apartamento 500</td>
-                        <td></td>
-                        <td>Água Fria</td>
-                        <td>A23B589231</td>
-                        <td>14,5</td>
-                        <td>05/01 10:25</td>
-                        <td>0,353</td>
-                        <td>0,353</td>
-                        <td>0,000 m³</td>
-                        <td>R$ 0,00</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom contrast-row">
-                        
-                        <td class="bold uppercase">Total Apartamento 500</td>
-                        <td></td>
-                        <td class="bold uppercase">Bloco 1</td>
-                        
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,353</td>
-                        <td class="bold">0,000 m³</td>
-                        <td class="bold">R$ 0,00</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <table class="table-style table mb-3">
-
-                <tbody>
-
-                    <tr class="small-text align-text-center remove-border-bottom ">
-                        
-                        <td class="bold uppercase">Total Bloco 1 [X Unidades]</td>
-                        <td> </td>
-                        <td class="bold">120,53 m³</td>
-                        
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold">R$ 1.036,69</td>
-                    </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 300</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 300</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 300</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 300</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 300</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom border-top border-bottom">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
                     
-                    <tr class="small-text align-text-center remove-border-bottom ">
-                        
-                        <td class="bold uppercase">Total 4 Ventos [8 Unidades]</td>
-                        <td> </td>
-                        <td class="bold">120,53 m³</td>
-                        
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold">R$ 1.036,69</td>
-                    </tr>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom contrast-row">
 
-                    <tr class="small-text align-text-center remove-border-bottom ">
-                        
-                        <td class="bold uppercase">Total Copasa</td>
-                        <td> </td>
-                        <td class="bold">112,00 m³</td>
-                        
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold">R$ 980,66</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom ">
-                        
-                        <td class="bold uppercase">Diferença</td>
-                        <td> </td>
-                        <td class="bold">-8,53 m³</td>
-                        
-                        <td> </td>
-                        <td> </td>
-                        <td> </td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold"></td>
-                        <td class="bold">R$ -56,03</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <table class="table-style table mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="12">
-                            Histórico de Consumo (m³)
-                        </th>
-                    </tr>
+                    <td class="bold uppercase">Bloco 1</td>
+                    <td></td>
+                    <td colspan="3" class="bold uppercase">Total Apartamento 300</td>
+                    <td></td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,000 m³</td>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style table mb-3">
+
+            <tbody>
+
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 400</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 400</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 400</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 400</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 400</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom border-top border-bottom">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
                     
-                </thead>
-                <tbody class="even-column-contrast">
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                        <td>01/2023</td>
-                        <td>96 m³</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom contrast-row">
 
-            <table class="table-style table mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="10">
-                            Histórico de Consumo (12m)
-                        </th>
-                    </tr>
-                    
-                </thead>
-                <tbody>
-                    <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
-                        <td>Data</td>
-                        <td>Consumo<br>das Unid.</td>
-                        <td>Consumo<br>da fatura</td>
-                        <td>Medidor</td>
-                        <td>Valor<br>das Unid.</td>
-                        <td>Valor<br>da Fatura</td>
-                        <td>Rateio<br>Total</td>
-                        <td>Método<br>Utilizado</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/24</td>
-                        <td>1837438 m³</td>
-                        <td>1837438 m³</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>-</td>
-                        <td>255,623</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/24</td>
-                        <td>1837438 m³</td>
-                        <td>1837438 m³</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>-</td>
-                        <td>255,623</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/24</td>
-                        <td>1837438 m³</td>
-                        <td>1837438 m³</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>-</td>
-                        <td>255,623</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/24</td>
-                        <td>1837438 m³</td>
-                        <td>1837438 m³</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>-</td>
-                        <td>255,623</td>
-                    </tr>
-                    <tr class="small-text align-text-center remove-border-bottom">
-                        <td>01/24</td>
-                        <td>1837438 m³</td>
-                        <td>1837438 m³</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>R$0,00</td>
-                        <td>-</td>
-                        <td>255,623</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <td class="bold uppercase">Bloco 1</td>
+                    <td></td>
+                    <td colspan="3" class="bold uppercase">Total Apartamento 400</td>
+                    <td></td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,000 m³</td>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <table class="table-style table mb-3">
-                <thead>
-                    <tr>
-                        <th colspan="11">
-                            Comparativo
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
-                        <td colspan="5" class="border-bottom border-right">Leituras</td>
-                        <td colspan="5" class="border-bottom border-right">Fornecedor</td>
-                    </tr>
-                    <tr class="vertical-align smaller-text align-text-center text-color">
-                        <td>Período</td>
-                        <td>Dias</td>
-                        <td>Consumo</td>
-                        <td>Diário</td>
-                        <td class="border-right">Valor</td>
-                        <td>Período</td>
-                        <td>Dias</td>
-                        <td>Consumo</td>
-                        <td>Diário</td>
-                        <td class="border-right">Valor</td>
-                        <td>Diferença</td>
-                    </tr>
+        <table class="table-style table mb-3">
 
-                    <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
-                        <td>14/11 até 14/12</td>
-                        <td>30 dias</td>
-                        <td>96 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 860</td>
-                        <td>25/10 até 25/11</td>
-                        <td>31 dias</td>
-                        <td>108 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 938</td>
-                        <td>Difer.</td>
-                    </tr>
-                    <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
-                        <td>14/11 até 14/12</td>
-                        <td>30 dias</td>
-                        <td>96 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 860</td>
-                        <td>25/10 até 25/11</td>
-                        <td>31 dias</td>
-                        <td>108 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 938</td>
-                        <td>Difer.</td>
-                    </tr>
-                    <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
-                        <td>14/11 até 14/12</td>
-                        <td>30 dias</td>
-                        <td>96 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 860</td>
-                        <td>25/10 até 25/11</td>
-                        <td>31 dias</td>
-                        <td>108 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 938</td>
-                        <td>Difer.</td>
-                    </tr>
-                    <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
-                        <td>14/11 até 14/12</td>
-                        <td>30 dias</td>
-                        <td>96 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 860</td>
-                        <td>25/10 até 25/11</td>
-                        <td>31 dias</td>
-                        <td>108 m³</td>
-                        <td>3 m³</td>
-                        <td class="border-right">R$ 938</td>
-                        <td>Difer.</td>
-                    </tr>
-                    <tr class="contrast-row vertical-align smaller-text align-text-center remove-border-bottom">
-                        <td></td>
-                        <td class="bold uppercase">Total</td>
-                        <td class="bold">1.275 m³</td>
-                        <td class="bold uppercase">Total</td>
-                        <td class="bold border-right">R$ 11.049</td>
-                        <td></td>
-                        <td class="bold uppercase">Total</td>
-                        <td class="bold">1.275 m³</td>
-                        <td class="bold uppercase">Total</td>
-                        <td class="bold border-right">R$ 11.049</td>
-                        <td class="bold">Difer.</td>
-                    </tr>
-                    <tr class="contrast-row vertical-align smaller-text align-text-center remove-border-bottom">
-                        <td></td>
-                        <td class="bold uppercase">Média</td>
-                        <td class="bold">1.275 m³</td>
-                        <td class="bold uppercase">Média</td>
-                        <td class="bold border-right">R$ 11.049</td>
-                        <td></td>
-                        <td class="bold uppercase">Média</td>
-                        <td class="bold">1.275 m³</td>
-                        <td class="bold uppercase">Média</td>
-                        <td class="bold border-right">R$ 11.049</td>
-                        <td class="bold">Difer.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <tbody>
+
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 500</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 500</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 500</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 500</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td class="bold">Apartamento 500</td>
+                    <td></td>
+                    <td>Água Fria</td>
+                    <td>A23B589231</td>
+                    <td>14,5</td>
+                    <td>05/01 10:25</td>
+                    <td>0,353</td>
+                    <td>0,353</td>
+                    <td>0,000 m³</td>
+                    <td>R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom border-top border-bottom">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom contrast-row">
+
+                    <td class="bold uppercase">Bloco 1</td>
+                    <td></td>
+                    <td colspan="3" class="bold uppercase">Total Apartamento 500</td>
+                    <td></td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,353</td>
+                    <td class="bold">0,000 m³</td>
+                    <td class="bold">R$ 0,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style total-table table mb-3">
+
+            <tbody>
+
+                <tr class="small-text align-text-center remove-border-bottom ">
+
+                    <td class="bold uppercase">Total Bloco 1 [X Unidades]</td>
+                    <td> </td>
+                    <td class="bold">120,53 m³</td>
+
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold">R$ 1.036,69</td>
+                </tr>
+
+                <tr class="small-text align-text-center remove-border-bottom ">
+
+                    <td class="bold uppercase">Total 4 Ventos [8 Unidades]</td>
+                    <td> </td>
+                    <td class="bold">120,53 m³</td>
+
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold">R$ 1.036,69</td>
+                </tr>
+
+                <tr class="small-text align-text-center remove-border-bottom ">
+
+                    <td class="bold uppercase">Total Copasa</td>
+                    <td> </td>
+                    <td class="bold">112,00 m³</td>
+
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold">R$ 980,66</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom ">
+
+                    <td class="bold uppercase">Diferença</td>
+                    <td> </td>
+                    <td class="bold">-8,53 m³</td>
+
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold"></td>
+                    <td class="bold">R$ -56,03</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style table mb-3">
+            <thead>
+                <tr>
+                    <th colspan="12">
+                        Histórico de Consumo (m³)
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody class="even-column-contrast">
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                    <td>01/2023</td>
+                    <td>96 m³</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style table mb-3">
+            <thead>
+                <tr>
+                    <th colspan="10">
+                        Histórico de Consumo (12m)
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
+                    <td>Data</td>
+                    <td>Consumo<br>das Unid.</td>
+                    <td>Consumo<br>da fatura</td>
+                    <td>Medidor</td>
+                    <td>Valor<br>das Unid.</td>
+                    <td>Valor<br>da Fatura</td>
+                    <td>Rateio<br>Total</td>
+                    <td>Método<br>Utilizado</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/24</td>
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>-</td>
+                    <td>255,623</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/24</td>
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>-</td>
+                    <td>255,623</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/24</td>
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>-</td>
+                    <td>255,623</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/24</td>
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>-</td>
+                    <td>255,623</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>01/24</td>
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>R$0,00</td>
+                    <td>-</td>
+                    <td>255,623</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style table mb-3">
+            <thead>
+                <tr>
+                    <th colspan="11">
+                        Comparativo
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
+                    <td colspan="5" class="border-bottom border-right">Leituras</td>
+                    <td colspan="5" class="border-bottom border-right">Fornecedor</td>
+                </tr>
+                <tr class="vertical-align smaller-text align-text-center text-color">
+                    <td>Período</td>
+                    <td>Dias</td>
+                    <td>Consumo</td>
+                    <td>Diário</td>
+                    <td class="border-right">Valor</td>
+                    <td>Período</td>
+                    <td>Dias</td>
+                    <td>Consumo</td>
+                    <td>Diário</td>
+                    <td class="border-right">Valor</td>
+                    <td>Diferença</td>
+                </tr>
+
+                <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
+                    <td>14/11 até 14/12</td>
+                    <td>30 dias</td>
+                    <td>96 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 860</td>
+                    <td>25/10 até 25/11</td>
+                    <td>31 dias</td>
+                    <td>108 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 938</td>
+                    <td>Difer.</td>
+                </tr>
+                <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
+                    <td>14/11 até 14/12</td>
+                    <td>30 dias</td>
+                    <td>96 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 860</td>
+                    <td>25/10 até 25/11</td>
+                    <td>31 dias</td>
+                    <td>108 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 938</td>
+                    <td>Difer.</td>
+                </tr>
+                <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
+                    <td>14/11 até 14/12</td>
+                    <td>30 dias</td>
+                    <td>96 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 860</td>
+                    <td>25/10 até 25/11</td>
+                    <td>31 dias</td>
+                    <td>108 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 938</td>
+                    <td>Difer.</td>
+                </tr>
+                <tr class="vertical-align smaller-text align-text-center remove-border-bottom">
+                    <td>14/11 até 14/12</td>
+                    <td>30 dias</td>
+                    <td>96 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 860</td>
+                    <td>25/10 até 25/11</td>
+                    <td>31 dias</td>
+                    <td>108 m³</td>
+                    <td>3 m³</td>
+                    <td class="border-right">R$ 938</td>
+                    <td>Difer.</td>
+                </tr>
+                <tr class="contrast-row vertical-align smaller-text align-text-center remove-border-bottom">
+                    <td></td>
+                    <td class="bold uppercase">Total</td>
+                    <td class="bold">1.275 m³</td>
+                    <td class="bold uppercase">Total</td>
+                    <td class="bold border-right">R$ 11.049</td>
+                    <td></td>
+                    <td class="bold uppercase">Total</td>
+                    <td class="bold">1.275 m³</td>
+                    <td class="bold uppercase">Total</td>
+                    <td class="bold border-right">R$ 11.049</td>
+                    <td class="bold">Difer.</td>
+                </tr>
+                <tr class="contrast-row vertical-align smaller-text align-text-center remove-border-bottom">
+                    <td></td>
+                    <td class="bold uppercase">Média</td>
+                    <td class="bold">1.275 m³</td>
+                    <td class="bold uppercase">Média</td>
+                    <td class="bold border-right">R$ 11.049</td>
+                    <td></td>
+                    <td class="bold uppercase">Média</td>
+                    <td class="bold">1.275 m³</td>
+                    <td class="bold uppercase">Média</td>
+                    <td class="bold border-right">R$ 11.049</td>
+                    <td class="bold">Difer.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-style table mb-3">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        Média Consumo
+                    </th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr class="vertical-align small-text align-text-center text-color remove-border-bottom">
+                    <td>Maior<br>Consumo</td>
+                    <td>Menor<br>Consumo</td>
+                    <td>Média<br>Consumo</td>
+                </tr>
+                <tr class="small-text align-text-center remove-border-bottom">
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                    <td>1837438 m³</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <tbody>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Relatório gerado em:</strong> 17/03/2024 16:00
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Endereço:</strong>
+                        Rua dos Timbiras, 2800 - Belo Horizonte/MG
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Email:</strong>
+                        operacional@seuconsumo.com.br
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
 
 
 
-            
-        </div>
 
-    </body>
+    </div>
+
+</body>
+
 </html>
