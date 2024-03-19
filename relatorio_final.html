@@ -10,6 +10,28 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <style>
+        @page {
+            size: a4 portrait;
+            margin: 0.5cm;
+            margin-bottom: 2cm;
+            margin-top: 2.5 cm;
+
+            @frame header {
+                -pdf-frame-content: headerContent;
+                top: 1cm;
+                margin-left: 0cm;
+                margin-right: 0cm;
+            }
+
+            @frame footer {
+                -pdf-frame-content: footerContent;
+                bottom: 0cm;
+                margin-left: 9cm;
+                margin-right: 9cm;
+                height: 1cm;
+            }
+        }
+
         .table-style {
             border: 1px solid #13a89e;
             border-radius: 20px !important;
@@ -17,15 +39,15 @@
             border-collapse: separate;
         }
 
-        .border-top td{
+        .border-top td {
             border-top: 1px solid #13a89e !important;
         }
 
-        .border-bottom td{
+        .border-bottom td {
             border-bottom: 1px solid #13a89e !important;
         }
 
-        .border-left{
+        .border-left {
             border-left: 1px solid #13a89e !important;
         }
 
@@ -136,12 +158,12 @@
             background: transparent;
         }
 
-        .total-table{
+        .total-table {
             background-color: #13a89e;
 
         }
 
-        .total-table tr td{
+        .total-table tr td {
             color: white;
             font-size: 14px;
         }
@@ -280,6 +302,29 @@
             </tbody>
         </table>
 
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <tbody>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Relatório gerado em:</strong> 17/03/2024 16:00
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Endereço:</strong>
+                        Rua dos Timbiras, 2800 - Belo Horizonte/MG
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Email:</strong>
+                        operacional@seuconsumo.com.br
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <pdf:nextpage />
         <table class="table-style table mb-3">
             <thead>
                 <tr>
@@ -371,7 +416,7 @@
                     <td></td>
                     <td></td>
                     <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
-                    
+
                     <td class="bold">R$ 0,00</td>
                 </tr>
                 <tr class="small-text align-text-center remove-border-bottom contrast-row">
@@ -386,6 +431,7 @@
                 </tr>
             </tbody>
         </table>
+
 
         <table class="table-style table mb-3">
 
@@ -460,7 +506,7 @@
                     <td></td>
                     <td></td>
                     <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
-                    
+
                     <td class="bold">R$ 0,00</td>
                 </tr>
                 <tr class="small-text align-text-center remove-border-bottom contrast-row">
@@ -477,6 +523,30 @@
             </tbody>
         </table>
 
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <tbody>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Relatório gerado em:</strong> 17/03/2024 16:00
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Endereço:</strong>
+                        Rua dos Timbiras, 2800 - Belo Horizonte/MG
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Email:</strong>
+                        operacional@seuconsumo.com.br
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <pdf:nextpage />
+
         <table class="table-style table mb-3">
 
             <tbody>
@@ -550,7 +620,7 @@
                     <td></td>
                     <td></td>
                     <td class="bold uppercase" colspan="2">Taxa fixa copasa</td>
-                    
+
                     <td class="bold">R$ 0,00</td>
                 </tr>
                 <tr class="small-text align-text-center remove-border-bottom contrast-row">
@@ -655,6 +725,30 @@
                 </tr>
             </tbody>
         </table>
+
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <tbody>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Relatório gerado em:</strong> 17/03/2024 16:00
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Endereço:</strong>
+                        Rua dos Timbiras, 2800 - Belo Horizonte/MG
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Email:</strong>
+                        operacional@seuconsumo.com.br
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <pdf:nextpage />
 
         <table class="table-style total-table table mb-3">
 
@@ -762,6 +856,30 @@
             </tbody>
         </table>
 
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <tbody>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Relatório gerado em:</strong> 17/03/2024 16:00
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Endereço:</strong>
+                        Rua dos Timbiras, 2800 - Belo Horizonte/MG
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Email:</strong>
+                        operacional@seuconsumo.com.br
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <pdf:nextpage />
+
         <table class="table-style table mb-3">
             <thead>
                 <tr>
@@ -834,6 +952,30 @@
                 </tr>
             </tbody>
         </table>
+
+        <table class="table-style remove-border table rounded-3 mb-3">
+            <tbody>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Relatório gerado em:</strong> 17/03/2024 16:00
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Endereço:</strong>
+                        Rua dos Timbiras, 2800 - Belo Horizonte/MG
+                    </td>
+                </tr>
+                <tr class="padding-side remove-border-bottom">
+                    <td class="">
+                        <strong>Email:</strong>
+                        operacional@seuconsumo.com.br
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <pdf:nextpage />
 
         <table class="table-style table mb-3">
             <thead>
